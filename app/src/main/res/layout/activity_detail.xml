@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context="com.example.android.materialme.DetailActivity">
+
+        <ImageView
+            android:id="@+id/characterImageDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true" />
+
+        <TextView
+            android:id="@+id/nameDetail"
+            style="@style/TextAppearance.AppCompat.Headline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/characterImageDetail"
+            android:layout_marginBottom="8dp"
+            android:background="@android:color/black"
+            android:padding="16dp"
+            android:text="@string/name_placeholder"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark"
+            app:layout_constraintBottom_toBottomOf="@+id/characterImageDetail" />
+
+        <TextView
+            android:id="@+id/genderLabelDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Gender : "
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/characterImageDetail" />
+
+        <TextView
+            android:id="@+id/genderValueDetail"
+            android:layout_width="88dp"
+            android:layout_height="23dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_toEndOf="@+id/genderLabelDetail"
+            android:layout_toRightOf="@+id/genderLabelDetail"
+            app:layout_constraintStart_toEndOf="@+id/genderLabelDetail"
+            app:layout_constraintTop_toBottomOf="@+id/characterImageDetail" />
+
+        <TextView
+            android:id="@+id/speciesValueDetail"
+            android:layout_width="97dp"
+            android:layout_height="21dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_toEndOf="@+id/genderLabelDetail"
+            android:layout_toRightOf="@+id/genderLabelDetail"
+            app:layout_constraintStart_toEndOf="@+id/speciesLabelDetail"
+            app:layout_constraintTop_toBottomOf="@+id/genderValueDetail" />
+
+        <TextView
+            android:id="@+id/originValueDetail"
+            android:layout_width="97dp"
+            android:layout_height="21dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="7dp"
+            android:layout_toEndOf="@+id/genderLabelDetail"
+            android:layout_toRightOf="@+id/genderLabelDetail"
+            app:layout_constraintStart_toEndOf="@+id/originLabelDetail"
+            app:layout_constraintTop_toBottomOf="@+id/speciesValueDetail" />
+
+        <TextView
+            android:id="@+id/locationValueDetail"
+            android:layout_width="97dp"
+            android:layout_height="21dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@+id/genderLabelDetail"
+            android:layout_toRightOf="@+id/genderLabelDetail"
+            app:layout_constraintStart_toEndOf="@+id/locationLabelDetail"
+            app:layout_constraintTop_toBottomOf="@+id/originValueDetail" />
+
+        <TextView
+            android:id="@+id/speciesLabelDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/genderValueDetail"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Species :"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/genderLabelDetail" />
+
+        <TextView
+            android:id="@+id/originLabelDetail"
+            android:layout_width="54dp"
+            android:layout_height="20dp"
+            android:layout_alignStart="@+id/genderValueDetail"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Origin :"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/speciesLabelDetail" />
+
+        <TextView
+            android:id="@+id/locationLabelDetail"
+            android:layout_width="66dp"
+            android:layout_height="21dp"
+            android:layout_alignStart="@+id/genderValueDetail"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Location :"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/originLabelDetail" />
+
+        <TextView
+            android:id="@+id/statusValueDetail"
+            android:layout_width="80dp"
+            android:layout_height="29dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/characterImageDetail" />
+
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

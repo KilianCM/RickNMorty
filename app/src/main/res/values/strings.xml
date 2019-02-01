@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">RickNMorty</string>
+    <string name="name_placeholder">Rick Sanchez</string>
+    <string name="gender_label">Gender :</string>
+    <string name="gender_value">Male</string>
+    <string name="species_label">Species :</string>
+    <string name="species_value">Human</string>
+    <string name="status_value">Alive</string>
+
+    <string-array name="characters_names">
+        <item>Rick Sanchez</item>
+        <item>Fat Morty</item>
+        <item>Melissa</item>
+        <item>Mohawk Guy</item>
+    </string-array>
+
+    <string-array name="characters_genders">
+        <item>Male</item>
+        <item>Male</item>
+        <item>Female</item>
+        <item>Male</item>
+
+    </string-array>
+
+    <string-array name="characters_species">
+        <item>Human</item>
+        <item>Human</item>
+        <item>Human</item>
+        <item>Human</item>
+
+    </string-array>
+
+
+    <array name="characters_images">
+        <item>@drawable/img</item>
+        <item>@drawable/img</item>
+        <item>@drawable/img</item>
+        <item>@drawable/img</item>
+    </array>
+
+    <string-array name="status_array">
+        <item>Alive</item>
+        <item>Dead</item>
+        <item>unknown</item>
+    </string-array>
+</resources>
